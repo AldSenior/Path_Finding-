@@ -1,0 +1,28 @@
+.node {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background-color: #4A90E2; 
+  color: white; 
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.node:hover {
+  background-color: #357ABD; 
+  transform: scale(1.1);
+}
+
+.node.start {
+  background-color: #27AE60; 
+}
+
+.node.finish {
+  background-color: #C0392B;
+}

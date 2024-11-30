@@ -1,0 +1,15 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Изменение шрифта */
+  background-color: #eaecef; /* Лёгкий фон приложения */
+  min-height: 100vh; /* Минимальная высота */
+  display: flex; /* Становится flex контейнером */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+}
