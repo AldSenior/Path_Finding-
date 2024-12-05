@@ -99,26 +99,27 @@ const Graph = () => {
 					/>
 				))}
 			</div>
+			<div className="buttons">
+				<button onClick={() => addNode(prompt('Введите название узла:'))}>
 
-			<button onClick={() => addNode(prompt('Введите название узла:'))}>
-
-				Добавить узел
-			</button>
-			<button
-				onClick={() => {
-					const from = prompt('Введите начальный узел:')
-					const to = prompt('Введите конечный узел:')
-					if (nodes.includes(from) && nodes.includes(to)) {
-						addEdge(from, to)
-					} else {
-						alert('Укажите корректные узлы')
-					}
-				}}
-			>
-				Добавить ребро
-			</button>
-			<button onClick={findShortestPath}>Найти кратчайший путь</button>
-			<button onClick={resetGraph}>Сбросить граф</button>
+					Добавить узел
+				</button>
+				<button
+					onClick={() => {
+						const from = prompt('Введите начальный узел:')
+						const to = prompt('Введите конечный узел:')
+						if (nodes.includes(from) && nodes.includes(to)) {
+							addEdge(from, to)
+						} else {
+							alert('Укажите корректные узлы')
+						}
+					}}
+				>
+					Добавить ребро
+				</button>
+				<button onClick={findShortestPath}>Найти кратчайший путь</button>
+				<button onClick={resetGraph}>Сбросить граф</button>
+			</div>
 			{/* Вывод кратчайшего пути */}
 			{shortestPath.length > 0 && (
 				<div className="shortest-path">
